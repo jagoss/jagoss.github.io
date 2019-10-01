@@ -196,7 +196,7 @@ section {
 }
 
 .headline h3{
-	font-family: 'ostrich_sansblack';
+    font-family: 'Raleway', sans-serif;
 	text-transform:uppercase;
 	padding:0;
 	margin:20px 0 30px 0;
@@ -603,8 +603,8 @@ section#featured p  {
 
 .section-intro p{
 	font-size: 32px;
-	font-family: 'ostrich_sans_roundedmedium';
-	line-height:42px;
+    font-family: 'Roboto', sans-serif;
+    line-height:42px;
 	color: #3a3a3a;
 	font-weight:300;
 }
