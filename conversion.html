@@ -117,8 +117,15 @@
                             </div>
 
                             <input type="file"
-                                   id="cargar_archivo" name="cargarArchivo"
-                                   accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                   id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
+                                   accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf, .png, .jpg, .jpeg">
+
+                            <div id="ocr_status" class="progress progress-striped active">
+                                <div id="status_bar" class="bar bar-success bar40">
+                                </div>
+                            </div>
+                            <div id="ocr_results"> </div>
+
                         </div>
                         <!--end: Accordion -->
                     </div>

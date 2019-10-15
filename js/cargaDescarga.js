@@ -1,11 +1,13 @@
 var input = document.querySelector('input');
-// var preview = document.querySelector('#preview');
+var preview = document.querySelector('#preview');
 
 input.style.opacity = 0;
 input.addEventListener('change', updateTextDisplay);
 
 function updateTextDisplay() {
-
+    while(preview.firstChild) {
+        preview.removeChild(preview.firstChild);
+    }
     var parrafo = document.getElementById("datos_archivo");
     var curFiles = input.files;
 
@@ -18,28 +20,38 @@ function updateTextDisplay() {
                 var size ='Tamaño: ' + returnFileSize(curFiles[i].size) + '.';
                 var nombre = 'Nombre archivo: ' + curFiles[i].name + ".";
 
-                parrafo.textContent = nombre;
-                var nuevoParra = document.createElement("p");
-                setStyle(nuevoParra);
-                var node = document.createTextNode(size);
-                nuevoParra.appendChild(node);
+                var tituloParra = document.createElement("p");
+                setStyle(tituloParra);
+                tituloParra.textContent = nombre;
 
-                var element = document.getElementById("preview");
-                element.appendChild(nuevoParra);
+                var sizeParra = document.createElement("p");
+                setStyle(sizeParra);
+                sizeParra.textContent = size;
+
+                preview.appendChild(tituloParra);
+                preview.appendChild(sizeParra);
 
             } else {
-                parrafo.textContent = 'File name ' + curFiles[i].name + ': Not a valid file type. Update your selection.';
+                var alerta = 'File name ' + curFiles[i].name + ': Not a valid file type. Update your selection.';
+                var parra = document.createElement("p");
+                setStyle(parra);
+                parra.textContent = alerta;
+                preview.appendChild(parra);
             }
         }
     }
 }
 
 const fileTypes = [
+    'application/pdf',
     '.doc',
     '.docx',
     '.xml',
     'application/msword',
-    'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'image/png',
+    'image/jpeg',
+    'image/pjpeg'
 ];
 
 function validFileType(file) {
