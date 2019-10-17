@@ -110,8 +110,11 @@
                         <h3>Suba su documento!</h3>
                         <!-- start: Accordion -->
                         <div>
-                            <label for="cargar_archivo" class="btn-large btn btn-color">Seleccione un archivo</label>
-
+                            <div id="select-file">
+                                <label for="cargar_archivo" class="btn-large btn btn-color">
+                                    Seleccione un archivo
+                                </label>
+                            </div>
                             <div id="preview">
                                 <p id="datos_archivo">Todavia no ha elegido un archivo</p>
                             </div>
@@ -120,11 +123,13 @@
                                    id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
                                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf, .png, .jpg, .jpeg">
 
+                            <button id="img-to-txt" class="btn-primary btn"> Convertir </button>
+
                             <div id="ocr_status" class="progress progress-striped active">
                                 <div id="status_bar" class="bar bar-success bar40">
                                 </div>
                             </div>
-                            <div id="ocr_results"> </div>
+                            <div id="ocr_results"></div>
 
                         </div>
                         <!--end: Accordion -->
@@ -229,10 +234,14 @@
                         <button id="pdf-prev">Previous</button>
                         <button id="pdf-next">Next</button>
                     </div>
-                    <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
+                    <div id="page-count-container">Page
+                        <div id="pdf-current-page"></div>
+                        of
+                        <div id="pdf-total-pages"></div>
+                    </div>
                 </div>
                 <canvas id="pdf-canvas" width="400"></canvas>
-                <div id="page-loader" style="display: none" >Loading page ...</div>
+                <div id="page-loader" style="display: none">Loading page ...</div>
                 <a id="download-image" href="#">Download PNG</a>
             </div>
         </div>
@@ -312,8 +321,9 @@
 <!-- Template Custom Javascript File -->
 <script src="js/custom.js"></script>
 <script src="js/pdf_to_image/pdf.worker.js"></script>
-<script src ="js/pdf_to_image/pdf.js "></script>
+<script src="js/pdf_to_image/pdf.js "></script>
 <script src="js/pdf_to_image/pdf_to_image.js"></script>
+<script src="js/image_to_txt/image_to_txt.js"></script>
 
 </body>
 
