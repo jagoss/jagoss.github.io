@@ -21,10 +21,11 @@ document.getElementById("img-to-txt").addEventListener("click", function () {
     let tesseractSettings = {
         lang: 'spa'
     };
-
+    var $pdfCanvas = $("#pdf-canvas");
+    var myCanvasContext = $pdfCanvas[0].getContext("2d");
     // Convert an image to text. This task works asynchronously, so you may show
     // your user a loading dialog or something like that, or show the progress with Tesseract
-    Tesseract.recognize($("#pdf-canvas").getContext('2d') , tesseractSettings).then(function (result) {
+    Tesseract.recognize(myCanvasContext, tesseractSettings).then(function (result) {
         // The result object of a text recognition contains detailed data about all the text
         // recognized in the image, words are grouped by arrays etc
         console.log(result);
