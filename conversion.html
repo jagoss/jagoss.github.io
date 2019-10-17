@@ -220,6 +220,22 @@
                 </div>
             </div>
         </div>
+
+        <div id="muestra">
+            <div id="pdf-loader" style="display: none"></div>
+            <div id="pdf-contents">
+                <div id="pdf-meta" style="display: none">
+                    <div id="pdf-buttons">
+                        <button id="pdf-prev">Previous</button>
+                        <button id="pdf-next">Next</button>
+                    </div>
+                    <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
+                </div>
+                <canvas id="pdf-canvas" width="400"></canvas>
+                <div id="page-loader" style="display: none" >Loading page ...</div>
+<!--                <a id="download-image" href="#">Download PNG</a>-->
+            </div>
+        </div>
     </div>
 
 </section>
@@ -276,6 +292,7 @@
 
 <!-- Javascript Library Files -->
 <!-- Using a free CDN -->
+
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.easing.js"></script>
@@ -294,6 +311,9 @@
 
 <!-- Template Custom Javascript File -->
 <script src="js/custom.js"></script>
+<script src="js/pdf_to_image/pdf.worker.js"></script>
+<script src ="js/pdf_to_image/pdf.js "></script>
+<script src="js/pdf_to_image/pdf_to_image.js"></script>
 
 </body>
 
