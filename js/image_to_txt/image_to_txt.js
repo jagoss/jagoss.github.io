@@ -1,13 +1,13 @@
 // 1. After including the Tesseract script, initialize it in the browser
 // Note: to prevent problems while tesseract loads scripts, provide the absolute path to the file from your domain
-window.Tesseract = Tesseract.create({
+ window.Tesseract = Tesseract.create({
     // Path to worker
-    workerPath: 'http://mydomain.com/worker.js',
+    workerPath: 'https://cdn.rawgit.com/naptha/tesseract.js/0.2.0/dist/worker.js',
     // Path of folder where the language trained data is located
     // note the "/" at the end, this string will be concatenated with the selected language
-    langPath: 'http://mydomain.com/langs-folder/',
+    langPath: 'https://cdn.rawgit.com/naptha/tessdata/gh-pages/3.02/eng.traineddata.gz',
     // Path to index script of the tesseract core ! https://github.com/naptha/tesseract.js-core
-    corePath: 'http://mydomain.com/index.js',
+    corePath: 'https://cdn.rawgit.com/naptha/tesseract.js-core/0.1.0/index.js',
 });
 
 // 2. Write some logic to initialize the text recognition
@@ -19,10 +19,23 @@ document.getElementById("img-to-txt").addEventListener("click", function () {
 
     // Configure recognition
     let tesseractSettings = {
-        lang: 'spa'
+        lang: 'eng'
     };
     var $pdfCanvas = $("#pdf-canvas");
     var myCanvasContext = $pdfCanvas[0].getContext("2d");
+
+
+//     Tesseract.recognize(
+//         myCanvasContext,
+//         'eng',
+//         { logger: m => console.log(m) }
+//     ).then(({ data: { text } }) => {
+//         console.log(text);
+//     })
+// });
+//
+
+
     // Convert an image to text. This task works asynchronously, so you may show
     // your user a loading dialog or something like that, or show the progress with Tesseract
     Tesseract.recognize(myCanvasContext, tesseractSettings).then(function (result) {
