@@ -60,7 +60,7 @@ document.getElementById("img-to-txt").addEventListener("click", function () {
 
 function drawImage(url) {
 
-    const canvas = $("#pdf-canvas")[0];
+    const canvas = $('#pdf-canvas')[0];
 
     // Configure recognition
     let tesseractSettings = {
@@ -72,8 +72,7 @@ function drawImage(url) {
     image.src = url;
     image.crossOrigin = "Anonymous";
     image.onload = () => {
-
-        canvas.width = canvas.width;
+        canvas.width = image.width;
         canvas.height = image.height;
         ctx.drawImage(image, 0, 0);
 
