@@ -73,6 +73,7 @@ const fileTypes = [
 function validFileType(file) {
     for (var i = 0; i < fileTypes.length; i++) {
         if (file.type === fileTypes[i]) {
+            console.log(file.type)
             return true;
         }
     }
