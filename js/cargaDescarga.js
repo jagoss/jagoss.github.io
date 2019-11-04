@@ -33,6 +33,7 @@ function updateTextDisplay() {
                 // runOCR(curFiles[i].name);
 
             } else {
+                console.log(curFiles[i])
                 var alerta = 'File name ' + curFiles[i].name + ': Not a valid file type. Update your selection.';
                 var parra = document.createElement("p");
                 setStyle(parra);
@@ -64,7 +65,9 @@ const fileTypes = [
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     'image/png',
     'image/jpeg',
-    'image/pjpeg'
+    'image/pjpeg',
+    '.epub',
+    'application/epub+zip'
 ];
 
 function validFileType(file) {
@@ -73,6 +76,7 @@ function validFileType(file) {
             return true;
         }
     }
+    console.log(file.type)
     return false;
 }
 
