@@ -1,11 +1,11 @@
-import EpubCFI from "./epubcfi";
+import EpubCFI from "./epubcfi.js";
 import {
 	qs,
 	qsa,
 	querySelectorByType,
 	indexOfSorted,
 	locationOf
-} from "./utils/core";
+} from "./utils/core.js";
 
 /**
  * Page List Parser

@@ -1,4 +1,6 @@
-import ePub from "./epub";
+import ePub from "./epub.js";
+
+
 document.getElementById("convertir").addEventListener("click", function () {
     let btn = this;
 
@@ -14,4 +16,3 @@ document.getElementById("convertir").addEventListener("click", function () {
     });
     btn.disable = false;
 });
-export {ePub}

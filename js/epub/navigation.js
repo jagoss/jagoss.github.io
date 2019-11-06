@@ -1,4 +1,4 @@
-import {qs, qsa, querySelectorByType, filterChildren, getParentByTagName} from "./utils/core";
+import {qs, qsa, querySelectorByType, filterChildren, getParentByTagName} from "./utils/core.js";
 
 /**
  * Navigation Parser

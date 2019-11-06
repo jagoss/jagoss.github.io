@@ -1,5 +1,5 @@
-import {defer, isXml, parse} from "./core";
-import Path from "./path";
+import {defer, isXml, parse} from "./core.js";
+import Path from "./path.js";
 
 function request(url, type, withCredentials, headers) {
 	var supportsURL = (typeof window != "undefined") ? window.URL : false; // TODO: fallback for url if window isn't defined

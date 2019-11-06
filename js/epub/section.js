@@ -1,8 +1,8 @@
-import { defer } from "./utils/core";
-import EpubCFI from "./epubcfi";
-import Hook from "./utils/hook";
-import { sprint } from "./utils/core";
-import { replaceBase } from "./utils/replacements";
+import { defer } from "./utils/core.js";
+import EpubCFI from "./epubcfi.js";
+import Hook from "./utils/hook.js";
+import { sprint } from "./utils/core.js";
+import { replaceBase } from "./utils/replacements.js";
 
 /**
  * Represents a Section of the Book

@@ -1,7 +1,7 @@
-import {defer, isXml, parse} from "./utils/core";
-import request from "./utils/request";
-import mime from "../libs/mime/mime";
-import Path from "./utils/path";
+import {defer, isXml, parse} from "./utils/core.js";
+import request from "./utils/request.js";
+import mime from '../libs/mime/mime.js';
+import Path from "./utils/path.js";
 
 /**
  * Handles Unzipping a requesting files from an Epub Archive
@@ -136,7 +136,7 @@ class Archive {
 		var entry = this.zip.file(decodededUrl);
 
 		if(entry) {
-			mimeType = mimeType || mime.lookup(entry.name);
+			mimeType = mimeType || 	mime.lookup(entry.name);
 			return entry.async("uint8array").then(function(uint8array) {
 				return new Blob([uint8array], {type : mimeType});
 			});

@@ -1,7 +1,7 @@
-import EpubCFI from "./epubcfi";
-import Hook from "./utils/hook";
-import Section from "./section";
-import {replaceBase, replaceCanonical, replaceMeta} from "./utils/replacements";
+import EpubCFI from "./epubcfi.js";
+import Hook from "./utils/hook.js";
+import Section from "./section.js";
+import {replaceBase, replaceCanonical, replaceMeta} from "./utils/replacements.js";
 
 /**
  * A collection of Spine Items

@@ -1,12 +1,12 @@
-import Book from "./book";
-import Rendition from "./rendition";
-import CFI from "./epubcfi";
-import Contents from "./contents";
-import * as utils from "./utils/core";
-import { EPUBJS_VERSION } from "./utils/constants";
-import * as URLpolyfill from "url-polyfill";
+import Book from "./book.js";
+import Rendition from "./rendition.js";
+import CFI from "./epubcfi.js";
+import Contents from "./contents.js";
+import * as utils from "./utils/core.js";
+import { EPUBJS_VERSION } from "./utils/constants.js";
+import * as URLpolyfill from "../node_modules/url-polyfill/url-polyfill.min.js";
 
-import IframeView from "./managers/views/iframe";
+import IframeView from "./managers/views/iframe.js";
 import DefaultViewManager from "./managers/default";
 import ContinuousViewManager from "./managers/continuous";
 

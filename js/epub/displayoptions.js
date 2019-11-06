@@ -1,4 +1,4 @@
-import {qs, qsa } from "./utils/core";
+import {qs, qsa } from "./utils/core.js";
 
 /**
  * Open DisplayOptions Format Parser

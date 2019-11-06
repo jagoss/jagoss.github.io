@@ -2,6 +2,8 @@
   "name": "js",
   "version": "1.0.0",
   "dependencies": {
-    "tesseract.js": "^1.0.19"
+    "event-emitter": "^0.3.5",
+    "tesseract.js": "^1.0.19",
+    "url-polyfill": "^1.1.7"
   }
 }
