@@ -1,4 +1,4 @@
-import path from "../../node_modules/path-webpack";
+import path from "../../node_modules/path-webpack/path.js";
 
 /**
  * Creates a Path object for parsing and manipulation of a path strings
