@@ -77,7 +77,6 @@ function validFileType(file) {
             return true;
         }
     }
-    console.log(file.type)
     return false;
 }
 
