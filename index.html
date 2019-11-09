@@ -428,6 +428,82 @@
 </section>
 <!-- section works -->
 
+
+<!-- section main content del conversion -->
+<section id="maincontent" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="row">
+                    <div class="span4">
+                        <h3>Suba su documento!</h3>
+                        <!-- start: Accordion -->
+                        <div>
+                            <div id="img-to-txt">
+                                <label for="cargar_archivo" class="btn-large btn btn-color">
+                                    Seleccione un archivo
+                                </label>
+                            </div>
+                            <div id="preview">
+                                <p id="datos_archivo">Todavia no ha elegido un archivo</p>
+                            </div>
+
+                            <input type="file" id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
+                                   accept=".epub">
+                            <button id="convertir" class="btn-primary btn ">Convertir</button>
+                            <div id="ocr_status" class="progress progress-striped active">
+                                <div id="status_bar" class="bar bar-success " style="width: 21%">
+                                </div>
+                            </div>
+                            <div id="ocr_results"></div>
+
+                        </div>
+                        <!--end: Accordion -->
+                    </div>
+                    <div class="span4">
+                        <h3>Archivo</h3>
+                       <div> aca va el  cuadro de texto </div>
+                    </div>
+
+                    <div class="span4">
+                        <h3>Descargue su archivo!</h3>
+                        <div>
+                            <a href="../download/Skerry.txt" download="Ydaaaaleeee(ver. 2.0.1).txt"
+                               class="btn-large btn btn-color" style="display: flow-root">Descargar archivo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="solid_line">
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+    <!--    <div id="muestra">
+            <div id="pdf-loader" style="display: none"></div>
+            <div id="pdf-contents">
+                <div id="pdf-meta" style="display: none">
+                    <div id="pdf-buttons">
+                        <button id="pdf-prev">Previous</button>
+                        <button id="pdf-next">Next</button>
+                    </div>
+                    <div id="page-count-container">Page
+                        <div id="pdf-current-page"></div>
+                        of
+                        <div id="pdf-total-pages"></div>
+                    </div>
+                </div>
+                <canvas id="pdf-canvas"></canvas>
+                <div id="page-loader" style="display: none">Loading page ...</div>
+                <a id="download-image" href="#">Download PNG</a>
+            </div>
+        </div>-->
+    </div>
+
+</section>
+
 <!-- section contact -->
 <section id="contact" class="section">
     <div class="container">
@@ -514,6 +590,8 @@
     </div>
 </section>
 <!-- end section contact -->
+
+
 
 
 <footer>
