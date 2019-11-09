@@ -28,4 +28,17 @@
 //         // Enable button once the text recognition finishes (either if fails or not)
 //         btn.disable = false;
 //     });
-// }, false);
+//     }, false);
+
+document.getElementById("convertir").addEventListener("click", function () {
+    const texto = "prueba para ver si anda bien esto. Andara?";
+    const texto_dividido = texto.split(" ");
+    let corriendo = true;
+
+    while(corriendo){
+        setTimeout(function () {
+
+        },2000);
+
+    }
+}, false);
