@@ -15,7 +15,7 @@
     <link href="public/css/animate.css" rel="stylesheet" type="text/css">
     <link href="public/css/flexslider.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" media="screen" href="public/css/sequencejs.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link href="public/color/default.css" rel="stylesheet" type="text/css">
 
     <!-- Fav and touch icons -->
@@ -45,7 +45,7 @@
                             <li><a href="#services">Funciones</a></li>
                             <li><a href="#works">Ejemplos</a></li>
                             <li><a href="#contact">Contacto</a></li>
-                            <li class="dropdown"><a href="public/pages/conversion.html">Convierta</a></li>
+                            <li class="dropdown"><a href="#convierta">Convierta</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -390,7 +390,8 @@
                                 <div class="folio-caption">
                                     <h5>Presentaciones</h5>
                                     <span class="folio-link">
-									<a href="public/img/portfolio/big/img10b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img10b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -402,7 +403,8 @@
                                 <div class="folio-caption">
                                     <h5>Instructivo de uso</h5>
                                     <span class="folio-link">
-									<a href="public/img/portfolio/big/img11b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img11b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -414,7 +416,8 @@
                                 <div class="folio-caption">
                                     <h5><i>Paper</i> científico</h5>
                                     <span class="folio-link">
-									<a href="public/img/portfolio/big/img12b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img12b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -427,6 +430,89 @@
     </div>
 </section>
 <!-- section works -->
+
+
+<!-- section main content del conversion -->
+<section id="convierta" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="row">
+                    <div class="span12">
+                        <h3>Suba su documento!</h3>
+                        <!-- start: Accordion -->
+                        <div>
+                            <div id="img-to-txt">
+                                <label for="cargar_archivo" class="btn-large btn btn-color">
+                                    Seleccione un archivo
+                                </label>
+                            </div>
+                            <div id="preview">
+                                <p id="datos_archivo">Todavia no ha elegido un archivo</p>
+                            </div>
+
+                            <input type="file" id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
+                                   accept=".epub">
+                            <button id="convertir" class="btn-primary btn ">Convertir</button>
+                            <div id="ocr_status" class="progress progress-striped active">
+                                <div id="status_bar" class="bar bar-success " style="width: 21%">
+                                </div>
+                            </div>
+                            <div id="ocr_results"></div>
+
+                        </div>
+                        <!--end: Accordion -->
+                    </div>
+
+
+                </div>
+                <div class="solid_line">
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+        <!--    <div id="muestra">
+                <div id="pdf-loader" style="display: none"></div>
+                <div id="pdf-contents">
+                    <div id="pdf-meta" style="display: none">
+                        <div id="pdf-buttons">
+                            <button id="pdf-prev">Previous</button>
+                            <button id="pdf-next">Next</button>
+                        </div>
+                        <div id="page-count-container">Page
+                            <div id="pdf-current-page"></div>
+                            of
+                            <div id="pdf-total-pages"></div>
+                        </div>
+                    </div>
+                    <canvas id="pdf-canvas"></canvas>
+                    <div id="page-loader" style="display: none">Loading page ...</div>
+                    <a id="download-image" href="#">Download PNG</a>
+                </div>
+            </div>-->
+    </div>
+
+</section>
+<div>
+    <img class="prev" src="public/img/bt-prev.png" alt="Previous">
+    <img class="next" src="public/img/bt-next.png" alt="Next">
+    <div class="container">
+        <div class="row">
+            <p id="myParagraph">
+                NDEAHHH
+
+            </p>
+
+        </div>
+    </div>
+</div>
+<section id="Archivo" class="section">>
+
+
+</section>
 
 <!-- section contact -->
 <section id="contact" class="section">
@@ -513,7 +599,6 @@
         </div>
     </div>
 </section>
-<!-- end section contact -->
 
 
 <footer>
@@ -553,6 +638,8 @@
     </div>
 </footer>
 
+
+<script src="public/js/cargaDescarga.js"></script>
 <!-- Javascript Library Files -->
 <!-- Using a free CDN -->
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
@@ -572,6 +659,30 @@
 <script src="public/js/prettyPhoto/jquery.prettyPhoto.js"></script>
 <script src="public/js/prettyPhoto/setting.js"></script>
 <script src="public/js/jquery.flexslider.js"></script>
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/jquery.easing.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/jquery.lettering.js"></script>
+<script src="public/js/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="public/js/nagging-menu.js"></script>
+<script src="public/js/portfolio/jquery.quicksand.js"></script>
+<script src="public/js/portfolio/setting.js"></script>
+<script src="public/js/jquery.scrollTo.js"></script>
+<script src="public/js/jquery.nav.js"></script>
+<script src="public/js/modernizr.custom.js"></script>
+<script src="public/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="public/js/prettyPhoto/setting.js"></script>
+<script src="public/js/jquery.flexslider.js"></script>
+
+<!-- Template Custom Javascript File -->
+<script src="public/js/custom.js"></script>
+<script src="public/js/pdf_to_image/pdf.worker.js"></script>
+<script src="public/js/pdf_to_image/pdf.js "></script>
+<script src="public/js/pdf_to_image/pdf_to_image.js"></script>
+<script src="public/js/image_to_txt/image_to_txt.js"></script>
+<script src="public/js/epub/runner.js"></script>
+
 
 <!-- Contact Form JavaScript File -->
 <script src="public/contactform/contactform.js"></script>
@@ -582,3 +693,4 @@
 </body>
 
 </html>
+
