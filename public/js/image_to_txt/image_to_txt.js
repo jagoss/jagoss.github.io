@@ -29,16 +29,19 @@
 //         btn.disable = false;
 //     });
 //     }, false);
+const box = document.getElementById("texto");
 
 document.getElementById("convertir").addEventListener("click", function () {
     const texto = "prueba para ver si anda bien esto. Andara?";
     const texto_dividido = texto.split(" ");
-    let corriendo = true;
+    let contador = 0;
 
-    while(corriendo){
+    box.innerText = 'TEXTO COMENZARA EN 2 SEGUNDOS';
+    while (contador < texto_dividido.length) {
         setTimeout(function () {
-
-        },2000);
-
+            box.innerText = texto_dividido[contador];
+            contador++;
+        }, 2000);
     }
+    box.innerText = 'SE TERMINO EL TEXTO';
 }, false);
