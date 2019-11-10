@@ -34,7 +34,7 @@ document.getElementById("img-to-txt").addEventListener("click", function () {
         console.error(reason);
     });
 
-})
+});
 /**
  * Retrieves the text of a specif page within a PDF Document obtained through pdf.js
  *

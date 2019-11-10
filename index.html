@@ -453,7 +453,7 @@
 
                             <input type="file" id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
                                    accept=".epub">
-                            <button id="convertir" class="btn-primary btn ">Convertir</button>
+                            <button id="convertir" onclick="convertir()" class="btn-primary btn ">Convertir</button>
                             <div id="ocr_status" class="progress progress-striped active">
                                 <div id="status_bar" class="bar bar-success " style="width: 21%">
                                 </div>
@@ -501,10 +501,12 @@
     <img class="next" src="public/img/bt-next.png" alt="Next">
     <div class="container">
         <div class="row">
+            <div style="border-radius: 20px" >
             <p id="myParagraph">
                 NDEAHHH
 
             </p>
+            </div>
 
         </div>
     </div>
@@ -640,6 +642,7 @@
 
 
 <script src="public/js/cargaDescarga.js"></script>
+<script src="public/js/image_to_txt/prueba2.js"></script>
 <!-- Javascript Library Files -->
 <!-- Using a free CDN -->
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
@@ -679,9 +682,9 @@
 <script src="public/js/custom.js"></script>
 <script src="public/js/pdf_to_image/pdf.worker.js"></script>
 <script src="public/js/pdf_to_image/pdf.js "></script>
-<script src="public/js/pdf_to_image/pdf_to_image.js"></script>
-<script src="public/js/image_to_txt/image_to_txt.js"></script>
-<script src="public/js/epub/runner.js"></script>
+ <script src="public/js/pdf_to_image/pdf_to_image.js"></script>
+<!-- <script src="public/js/image_to_txt/image_to_txt.js"></script>-->
+<!--<script src="public/js/epub/runner.js"></script>-->
 
 
 <!-- Contact Form JavaScript File -->
@@ -689,6 +692,7 @@
 
 <!-- Template Custom Javascript File -->
 <script src="public/js/custom.js"></script>
+
 
 </body>
 

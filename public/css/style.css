@@ -41,6 +41,18 @@ iframe, embed, object {
   margin-bottom: 20px;
 }
 
+#myParagraph{
+
+    background: #f7f7f7;
+    font-size: 250%;
+    border-radius: 5px;
+    border: #7b36d6; /*no esta andando */
+    border: 5px;
+    /* IMPORTANTE */
+    text-align: center;
+
+}
+
 blockquote {
   display: inline-block;
   padding-left: 18px;
