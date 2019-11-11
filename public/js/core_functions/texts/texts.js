@@ -12,34 +12,50 @@ const reviews = {
     other2: "",
     other3: ""
 };
+let cuento;
 
-let i = 0;
+function ejemploCuentos(numero) {
+    window.clearTimeout(cuento);
+    let p = 0;
+    let textoVec;
+    switch (numero) {
+        case 1:
+            textoVec = tales.threeLittlePigs.split(" ");
+            break;
+        case 2:
+            textoVec = tales.hanselAndGretel.split(" ");
+            break;
+        case 3:
+            textoVec = tales.snowWhite.split(" ");
+            break;
+    }
 
-function ejemplo3chanchitos() {
-    const textoVec = tales.threeLittlePigs.split(" ");
-    if (i < textoVec.length) {
-        document.getElementById("ejemplo").innerHTML = textoVec[i];
-        i++;
-        window.setTimeout(convertir, 1000);
-    }
-}
-function ejemploHanselyGretel() {
-    const textoVec = tales.hanselAndGretel.split(" ");
-    if (i < textoVec.length) {
-        document.getElementById("ejemplo").innerHTML = textoVec[i];
-        i++;
-        window.setTimeout(convertir, 1000);
-    }
-}
-function ejemploSnowWhite() {
-    const textoVec = tales.snowWhite.split(" ");
-    if (i < textoVec.length) {
-        document.getElementById("ejemplo").innerHTML = textoVec[i];
-        i++;
-        window.setTimeout(convertir, 1000);
-    }
+    ejemploRecursion(textoVec,p);
 }
 
-export {tales};
-export {articles};
-export {reviews};
+function ejemploRecursion(textoVec, p) {
+    if (p < textoVec.length) {
+        document.getElementById("ejemplo").innerHTML = textoVec[p];
+        p++;
+        cuento = window.setTimeout(function () {
+            ejemploRecursion(textoVec, p);
+        }, 1000);
+    }
+}
+
+// function ejemploHanselyGretel() {
+//     const textoVec = tales.hanselAndGretel.split(" ");
+//     if (p < textoVec.length) {
+//         document.getElementById("ejemplo").innerHTML = textoVec[i];
+//         p++;
+//         window.setTimeout(convertir, 1000);
+//     }
+// }
+// function ejemploSnowWhite() {
+//     const textoVec = tales.snowWhite.split(" ");
+//     if (p < textoVec.length) {
+//         document.getElementById("ejemplo").innerHTML = textoVec[i];
+//         i++;
+//         window.setTimeout(convertir, 1000);
+//     }
+// }
