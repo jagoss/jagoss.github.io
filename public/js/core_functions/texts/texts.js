@@ -12,6 +12,34 @@ const reviews = {
     other2: "",
     other3: ""
 };
+
+let i = 0;
+
+function ejemplo3chanchitos() {
+    const textoVec = tales.threeLittlePigs.split(" ");
+    if (i < textoVec.length) {
+        document.getElementById("ejemplo").innerHTML = textoVec[i];
+        i++;
+        window.setTimeout(convertir, 1000);
+    }
+}
+function ejemploHanselyGretel() {
+    const textoVec = tales.hanselAndGretel.split(" ");
+    if (i < textoVec.length) {
+        document.getElementById("ejemplo").innerHTML = textoVec[i];
+        i++;
+        window.setTimeout(convertir, 1000);
+    }
+}
+function ejemploSnowWhite() {
+    const textoVec = tales.snowWhite.split(" ");
+    if (i < textoVec.length) {
+        document.getElementById("ejemplo").innerHTML = textoVec[i];
+        i++;
+        window.setTimeout(convertir, 1000);
+    }
+}
+
 export {tales};
 export {articles};
 export {reviews};
