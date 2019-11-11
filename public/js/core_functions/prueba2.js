@@ -7,8 +7,9 @@ const textoVec = texto.split(" ");
 var i = 0;
 var j = textoVec.length;
 
-function convertir() {
-    if (i < j) {
+function convertir(texto) {
+    const textoVec = texto.split(" ");
+    if (i < textoVec.length) {
         document.getElementById("myParagraph").innerHTML = textoVec[i];
         i++;
         window.setTimeout(convertir, 1000);
