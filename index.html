@@ -8,22 +8,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="font/stylesheet.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="css/sequencejs.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
+    <link href="public/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="public/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="public/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+    <link href="public/font/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="public/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="public/css/flexslider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen" href="public/css/sequencejs.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+    <link href="public/color/default.css" rel="stylesheet" type="text/css">
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="public/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="public/ico/favicon.ico">
 
 </head>
 
@@ -35,7 +35,7 @@
         <div class="navbar-inner">
             <div class="container">
                 <div class="logo">
-                    <a class="brand" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="brand" href="index.html"><img src="public/img/logo.png" alt=""></a>
                 </div>
                 <div class="navigation">
                     <nav>
@@ -45,7 +45,7 @@
                             <li><a href="#services">Funciones</a></li>
                             <li><a href="#works">Ejemplos</a></li>
                             <li><a href="#contact">Contacto</a></li>
-                            <li class="dropdown"><a href="conversion.html">Convierta</a></li>
+                            <li class="dropdown"><a href="#convierta">Convierta</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -61,8 +61,8 @@
 
     <!-- sequence slider -->
     <div id="sequence-theme">
-        <img class="prev" src="img/bt-prev.png" alt="Previous">
-        <img class="next" src="img/bt-next.png" alt="Next">
+        <img class="prev" src="public/img/bt-prev.png" alt="Previous">
+        <img class="next" src="public/img/bt-next.png" alt="Next">
         <div class="container">
             <div class="row">
                 <div class="span12">
@@ -74,7 +74,7 @@
                                 </div>
                                 <h4 class="subtitle">Agregue el formato necesario a sus archivos</h4>
                                 <div class="bottomup">
-                                    <img src="img/slider/parallax/img-1.png" alt="">
+                                    <img src="public/img/slider/parallax/img-1.png" alt="">
                                 </div>
                             </li>
                             <li class="animate-in">
@@ -83,7 +83,7 @@
                                 </div>
                                 <h4 class="subtitle">...incluyendo .docx, .pdf y más</h4>
                                 <div class="lefttop">
-                                    <img src="img/slider/parallax/img-2.png" alt="">
+                                    <img src="public/img/slider/parallax/img-2.png" alt="">
                                 </div>
                             </li>
                             <li class="animate-in">
@@ -92,7 +92,7 @@
                                 </div>
                                 <h4 class="subtitle">Optimizada para más de 100 lenguajes</h4>
                                 <div class="righttop">
-                                    <img src="img/slider/parallax/img-3.png" alt="">
+                                    <img src="public/img/slider/parallax/img-3.png" alt="">
                                 </div>
                             </li>
                         </ul>
@@ -136,13 +136,13 @@
                 <div class="flexslider">
                     <ul class="slides">
                         <li>
-                            <img src="img/slider/flexslider/img-1.png" alt="">
+                            <img src="public/img/slider/flexslider/img-1.png" alt="">
                         </li>
                         <li>
-                            <img src="img/slider/flexslider/img-2.png" alt="">
+                            <img src="public/img/slider/flexslider/img-2.png" alt="">
                         </li>
                         <li>
-                            <img src="img/slider/flexslider/img-3.png" alt="">
+                            <img src="public/img/slider/flexslider/img-3.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -266,23 +266,30 @@
             </div>
             <div class="span12">
                 <ul class="filter">
-                    <li class="all active"><a href="#" class="btn btn-color">Todas las extensiones</a></li>
+                    <li class="all active"><a href="#" class="btn btn-color">Todos los ejemplos</a></li>
                     <li class="web"><a href="#" class="btn btn-color">.docx</a></li>
-                    <li class="brand"><a href="#" class="btn btn-color">.pdf</a></li>
+                    <li class="brand"><a href="#" class="btn btn-color">Reseñas</a></li>
                     <li class="graphic"><a href="#" class="btn btn-color">.txt</a></li>
-                    <li class="photo"><a href="#" class="btn btn-color">.jpg</a></li>
-                    <li class="ilustrator"><a href="#" class="btn btn-color">.rtf</a></li>
+                    <li class="photo"><a href="#" class="btn btn-color">Cuentos infantiles</a></li>
+                    <li class="ilustrator"><a href="#" class="btn btn-color">Artículos</a></li>
                 </ul>
+                <div class="container" style="float: left">
+                    <div class="row">
+                        <div style="border-radius: 20px">
+                            <p id="ejemplo">RESULTADO DEL EJEMPLO</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <ul class="portfolio-area">
                         <li class="portfolio-item2" data-id="id-0" data-type="web">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img1.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img1.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Evaluación</h5>
                                     <span class="folio-link">
                                     <!-- Acá van las imágenes agrandadas (750x500) -->
-									<a href="img/portfolio/big/img1b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img1b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -290,11 +297,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="brand">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img2.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img2.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Carátula</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img2b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img2b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -302,11 +309,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="web">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img3.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img3.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Índice</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img3b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img3b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -314,11 +321,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="graphic">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img4.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img4.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Instrucciones</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img4b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img4b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -326,11 +333,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="ilustrator">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img5.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img5.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Códigos</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img5b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img5b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -338,11 +345,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="brand">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img6.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img6.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Citación de casos</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img6b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img6b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -350,11 +357,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="photo">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img7.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img7.jpg" class="folio-image" onclick="convertir(tales[0])">
                                 <div class="folio-caption">
-                                    <h5>Mapa de ideas</h5>
+                                    <h5>Los 3 chanchitos</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img7b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img7b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -362,11 +369,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="photo">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img8.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img8.jpg" class="folio-image" onclick="convertir(tales[1])">
                                 <div class="folio-caption">
-                                    <h5>Reporte de errores</h5>
+                                    <h5>Hansel y Gretel</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img8b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img8b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -374,11 +381,11 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="brand">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img9.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img9.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Artículos</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img9b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img9b.jpg" data-pretty="prettyPhoto" title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -386,11 +393,12 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="photo">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img10.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img10.jpg" class="folio-image" onclick="convertir(tales[2])">
                                 <div class="folio-caption">
-                                    <h5>Presentaciones</h5>
+                                    <h5>Snow White</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img10b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img10b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -398,11 +406,12 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="graphic">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img11.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img11.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5>Instructivo de uso</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img11b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img11b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -410,11 +419,12 @@
                         </li>
                         <li class="portfolio-item2" data-id="id-0" data-type="brand">
                             <div class="thumb-wrapp">
-                                <img src="img/portfolio/little/img12.jpg" class="folio-image" alt="">
+                                <img src="public/img/portfolio/little/img12.jpg" class="folio-image" alt="">
                                 <div class="folio-caption">
                                     <h5><i>Paper</i> científico</h5>
                                     <span class="folio-link">
-									<a href="img/portfolio/big/img12b.jpg" data-pretty="prettyPhoto" title="zoom">
+									<a href="public/img/portfolio/big/img12b.jpg" data-pretty="prettyPhoto"
+                                       title="zoom">
 									<i class="icon-rounded  icon-32 icon-zoom-in"></i></a>
 									</span>
                                 </div>
@@ -427,6 +437,90 @@
     </div>
 </section>
 <!-- section works -->
+
+
+<!-- section main content del conversion -->
+<section id="convierta" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="row">
+                    <div class="span12">
+                        <h3>Suba su documento!</h3>
+                        <!-- start: Accordion -->
+                        <div>
+                            <div id="img-to-txt">
+                                <label for="cargar_archivo" class="btn-large btn btn-color">
+                                    Seleccione un archivo
+                                </label>
+                            </div>
+                            <div id="preview">
+                                <p id="datos_archivo">Todavia no ha elegido un archivo</p>
+                            </div>
+
+                            <input type="file" id="cargar_archivo" name="cargarArchivo" class="btn-large btn btn-color"
+                                   accept=".epub">
+                            <button id="convertir" onclick="convertir()" class="btn-primary btn ">Convertir</button>
+                            <div id="ocr_status" class="progress progress-striped active">
+                                <div id="status_bar" class="bar bar-success " style="width: 21%">
+                                </div>
+                            </div>
+                            <div id="ocr_results"></div>
+
+                        </div>
+                        <!--end: Accordion -->
+                    </div>
+
+
+                </div>
+                <div class="solid_line">
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+        <!--    <div id="muestra">
+                <div id="pdf-loader" style="display: none"></div>
+                <div id="pdf-contents">
+                    <div id="pdf-meta" style="display: none">
+                        <div id="pdf-buttons">
+                            <button id="pdf-prev">Previous</button>
+                            <button id="pdf-next">Next</button>
+                        </div>
+                        <div id="page-count-container">Page
+                            <div id="pdf-current-page"></div>
+                            of
+                            <div id="pdf-total-pages"></div>
+                        </div>
+                    </div>
+                    <canvas id="pdf-canvas"></canvas>
+                    <div id="page-loader" style="display: none">Loading page ...</div>
+                    <a id="download-image" href="#">Download PNG</a>
+                </div>
+            </div>-->
+    </div>
+
+</section>
+<div>
+    <img class="prev" src="public/img/bt-prev.png" alt="Previous">
+    <img class="next" src="public/img/bt-next.png" alt="Next">
+    <div class="container">
+        <div class="row">
+            <div style="border-radius: 20px">
+                <p id="myParagraph">
+                    NDEAHHH
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section id="Archivo" class="section">
+
+
+</section>
 
 <!-- section contact -->
 <section id="contact" class="section">
@@ -513,7 +607,6 @@
         </div>
     </div>
 </section>
-<!-- end section contact -->
 
 
 <footer>
@@ -524,7 +617,7 @@
                     <div class="aligncenter">
                         <div class="logo">
                             <a class="brand" href="index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="public/img/logo.png" alt="">
                             </a>
                         </div>
                         <p>Sitio web realizado para la materia Labratorio TIC III - Curso 2019</p>
@@ -553,32 +646,61 @@
     </div>
 </footer>
 
+
+<script src="public/js/cargaDescarga.js"></script>
+<script src="public/js/core_functions/prueba2.js"></script>
 <!-- Javascript Library Files -->
 <!-- Using a free CDN -->
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.lettering.js"></script>
-<script src="js/parallax/jquery.parallax-1.1.3.js"></script>
-<script src="js/nagging-menu.js"></script>
-<script src="js/sequence.jquery-min.js"></script>
-<script src="js/sequencejs-options.sliding-horizontal-parallax.js"></script>
-<script src="js/portfolio/jquery.quicksand.js"></script>
-<script src="js/portfolio/setting.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
-<script src="js/prettyPhoto/setting.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/jquery.easing.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/jquery.lettering.js"></script>
+<script src="public/js/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="public/js/nagging-menu.js"></script>
+<script src="public/js/sequence.jquery-min.js"></script>
+<script src="public/js/sequencejs-options.sliding-horizontal-parallax.js"></script>
+<script src="public/js/portfolio/jquery.quicksand.js"></script>
+<script src="public/js/portfolio/setting.js"></script>
+<script src="public/js/jquery.scrollTo.js"></script>
+<script src="public/js/jquery.nav.js"></script>
+<script src="public/js/modernizr.custom.js"></script>
+<script src="public/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="public/js/prettyPhoto/setting.js"></script>
+<script src="public/js/jquery.flexslider.js"></script>
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/jquery.easing.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/jquery.lettering.js"></script>
+<script src="public/js/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="public/js/nagging-menu.js"></script>
+<script src="public/js/portfolio/jquery.quicksand.js"></script>
+<script src="public/js/portfolio/setting.js"></script>
+<script src="public/js/jquery.scrollTo.js"></script>
+<script src="public/js/jquery.nav.js"></script>
+<script src="public/js/modernizr.custom.js"></script>
+<script src="public/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="public/js/prettyPhoto/setting.js"></script>
+<script src="public/js/jquery.flexslider.js"></script>
 
 <!-- Template Custom Javascript File -->
-<script src="js/custom.js"></script>
+<script src="public/js/custom.js"></script>
+<script src="public/js/pdf_to_image/pdf.worker.js"></script>
+<script src="public/js/pdf_to_image/pdf.js "></script>
+<script src="public/js/pdf_to_image/pdf_to_image.js"></script>
+<!-- <script src="public/js/core_functions/core_functions.js"></script>-->
+<!--<script src="public/js/epub/runner.js"></script>-->
+
+
+<!-- Contact Form JavaScript File -->
+<script src="public/contactform/contactform.js"></script>
+
+<!-- Template Custom Javascript File -->
+<script src="public/js/custom.js"></script>
+
 
 </body>
 
 </html>
+
